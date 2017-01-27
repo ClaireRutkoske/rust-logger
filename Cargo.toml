@@ -1,0 +1,5 @@
+[package]
+
+name = "pandacat"
+version = "0.0.1"
+authors = [ "Claire Rutkoske <claire@clairerutkoske.com>" ]
