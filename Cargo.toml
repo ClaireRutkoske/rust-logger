@@ -3,3 +3,7 @@
 name = "pandacat"
 version = "0.0.1"
 authors = [ "Claire Rutkoske <claire@clairerutkoske.com>" ]
+
+[dependencies]
+
+time = "0.1"
