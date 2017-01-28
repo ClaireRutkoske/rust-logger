@@ -1,5 +1,5 @@
 // Hide warnings for unused code.
-// #![allow(dead_code)]
+#![allow(dead_code)]
 
 extern crate time;
 
@@ -7,7 +7,6 @@ use std::fs;
 use std::fs::OpenOptions;
 use std::io;
 use std::io::prelude::*;
-use std::convert::AsRef;
 use std::string::String;
 
 // Timestamp
@@ -18,6 +17,7 @@ fn timestamp() -> i64 {
     
   mills
 }
+
 
 fn main() {
     
@@ -36,13 +36,12 @@ fn main() {
   loop {
       
     let mut file = OpenOptions::new().write(true).append(true).open("log/log").unwrap(); 
-      
+    
     // The log entry
     println!("Log entry:");
     let mut entry = String::new();
     io::stdin().read_line(&mut entry).expect("Failed to read.");
     let entry = entry.trim();
-      
       
     // Tags
     println!("Tag the entry (comma-separated):");

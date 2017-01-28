@@ -1,6 +1,6 @@
 [package]
 
-name = "pandacat"
+name = "rust-logger"
 version = "0.0.1"
 authors = [ "Claire Rutkoske <claire@clairerutkoske.com>" ]
 
